@@ -1,0 +1,35 @@
+import React from "react";
+import ProductCard from "./components/ProductCard";
+
+function App() {
+  return (
+    <div style={styles.container}>
+      <h2 style={styles.heading}>Products List</h2>
+      <div style={styles.list}>
+        <ProductCard name="Wireless Mouse" price="25.99" status="In Stock" />
+        <ProductCard name="Keyboard" price="45.50" status="Out of Stock" />
+        <ProductCard name="Monitor" price="199.99" status="In Stock" />
+      </div>
+    </div>
+  );
+}
+
+const styles = {
+  container: {
+    border: "1px solid black",
+    padding: "20px",
+    margin: "20px",
+    textAlign: "center",
+  },
+  heading: {
+    fontWeight: "bold",
+    fontSize: "22px",
+    marginBottom: "20px",
+  },
+  list: {
+    display: "flex",
+    justifyContent: "space-around",
+  },
+};
+
+export default App;
